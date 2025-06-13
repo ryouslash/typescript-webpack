@@ -77,6 +77,11 @@ module.exports = {
           "postcss-loader",
         ],
       },
+      // HTML用のローダー
+      {
+        test: /\.html$/i,
+        use: ["html-loader"],
+      },
       //Asset Modules
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
